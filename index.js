@@ -106,9 +106,9 @@ console.log ("Total:", netTotal);
 var totalChange = 0;
 var numberOfMonths = finances.length;
 
-for ( var i = 1; i < finances.length; i++){
+for (var i = 1; i < finances.length; i++) {
   var currentMonthProfitLoss = finances[i][1];
-  var previousMonthProfitLoss = finances[i][1];
+  var previousMonthProfitLoss = finances[i - 1][1];
 
   var change = currentMonthProfitLoss - previousMonthProfitLoss;
 
