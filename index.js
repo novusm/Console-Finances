@@ -100,7 +100,7 @@ for (var i = 0; i < finances.length; i++){
   var profitloss = finances [i][1];
   netTotal += profitloss;
 }
-console.log ("Total:", netTotal);
+console.log ("Total:",'$',netTotal);
 
 /*Average changes in profit*/
 var totalChange = 0;
@@ -117,6 +117,7 @@ for (var i = 1; i < finances.length; i++) {
 }
 
 var averageChange = totalChange / (numberOfMonths - 1);
+averageChange = averageChange.toFixed(2);
 console.log("Average Change:", averageChange);
 
 /* Greatest increase in profit / loss */
@@ -137,7 +138,7 @@ for (var i = 1; i < finances.length; i++){
   previousMonthProfitLoss = currentMonthProfitLoss;
   
 }
-console.log("Greteast Increase in Profit/Losses:", greatestIncreaseDate,'(',greatestIncreaseAmount,')');
+console.log("Greteast Increase in Profit/Losses:", greatestIncreaseDate,'($',greatestIncreaseAmount,')');
 
 /*Greatest decrease in profits / losses */
 var greatestDecreaseAmount = 0;
@@ -156,5 +157,5 @@ for (var i = 1; i < finances.length; i++){
   }
   previousMonthProfitLoss = currentMonthProfitLoss;
 }
-console.log(greatestDecreaseDate, '(',greatestDecreaseAmount,')');
+console.log(greatestDecreaseDate, '($',greatestDecreaseAmount,')');
 
