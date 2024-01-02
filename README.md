@@ -42,6 +42,11 @@ MIT
 
 ## Links
 
+Git Hub containing project code URL: https://github.com/novusm/Console-Finances/ 
+Deployed project: https://novusm.github.io/Console-Finances 
+Git hub: https://github.com/novusm 
+ReadMe: https://github.com/novusm/Console-Finances/blob/main/README.md
+
 
 
 
